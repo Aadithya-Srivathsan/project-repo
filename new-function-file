@@ -1,0 +1,79 @@
+_init_.py
+
+import azure.functions as func
+from .main import respond
+
+def main(req: func.HttpRequest) -> func.HttpResponse:
+    return respond(req)
+
+#####################################################
+
+function.json
+
+{
+  "scriptFile": "__init__.py",
+  "entryPoint": "main",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get", "post"],
+      "route": "respond"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
+#########################################################
+
+main.py
+
+import os
+import logging
+import azure.functions as func
+from openai import AzureOpenAI
+
+AZURE_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT")
+AZURE_API_KEY = os.environ.get("AZURE_OPENAI_API_KEY")
+AZURE_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "2025-03-01-preview")
+AZURE_MODEL = os.environ.get("AZURE_OPENAI_DEPLOYMENT")
+
+client = AzureOpenAI(
+    azure_endpoint=AZURE_ENDPOINT,
+    api_key=AZURE_API_KEY,
+    api_version=AZURE_API_VERSION,
+)
+
+def respond(req: func.HttpRequest) -> func.HttpResponse:
+    message = req.params.get("q")
+    if not message:
+        try:
+            body = req.get_json()
+            message = body.get("input")
+        except:
+            pass
+
+    if not message:
+        return func.HttpResponse("Text missing", status_code=400)
+
+    response = client.responses.create(
+        model=AZURE_MODEL,
+        input=[{"role": "user", "content": message}],
+    )
+
+    reply = response.output[0].content[0].text
+    return func.HttpResponse(reply, status_code=200)
+############################
+
+{
+  "version": 2,
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[3.*, 4.0.0)"
+  }
+}
