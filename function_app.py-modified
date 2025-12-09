@@ -1,0 +1,85 @@
+import os
+import logging
+import azure.functions as func
+from openai import AzureOpenAI
+
+# Initialize HTTP Function App (Python v2 programming model)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+
+# Read environment variables (App Settings / Key Vault references)
+AZURE_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT")
+AZURE_API_KEY = os.environ.get("AZURE_OPENAI_API_KEY")
+AZURE_API_VERSION = os.environ.get("AZURE_OPENAI_API_VERSION", "2025-03-01-preview")
+AZURE_MODEL = os.environ.get("AZURE_OPENAI_DEPLOYMENT")
+
+# Validate configuration in logs (helps debugging missing settings)
+logging.info(f"Using Azure OpenAI endpoint: {AZURE_ENDPOINT}")
+logging.info(f"Using model deployment: {AZURE_MODEL}")
+
+# Initialize the Azure OpenAI client
+client = AzureOpenAI(
+    azure_endpoint=AZURE_ENDPOINT,
+    api_key=AZURE_API_KEY,
+    api_version=AZURE_API_VERSION,
+)
+
+
+@app.function_name(name="ResponseAPI")
+@app.route(route="respond", methods=["GET", "POST"])
+def respond(req: func.HttpRequest) -> func.HttpResponse:
+    """
+    Chatbot Response API using Azure OpenAI Responses API.
+    Supports:
+    - GET  /api/respond?q=Hello
+    - POST /api/respond  { "input": "Hello" }
+    """
+
+    logging.info("Processing request with Azure OpenAI Responses API...")
+
+    # Extract user input from query param
+    message = req.params.get("q")
+
+    # If no query param, try POST JSON body
+    if not message:
+        try:
+            req_body = req.get_json()
+            message = req_body.get("input")
+        except Exception:
+            message = None
+
+    # If no input at all, return usage instructions
+    if not message:
+        return func.HttpResponse(
+            "Usage:\n"
+            "GET  /api/respond?q=hello\n"
+            "POST /api/respond {\"input\": \"hello\"}",
+            status_code=400,
+            headers={"Content-Type": "text/plain"}
+        )
+
+    try:
+        # Call Azure Responses API
+        response = client.responses.create(
+            model=AZURE_MODEL,
+            input=[{"role": "user", "content": message}],
+        )
+
+        # Extract chatbot reply
+        try:
+            reply = response.output[0].content[0].text
+        except Exception:
+            reply = str(response)
+
+        return func.HttpResponse(
+            reply,
+            status_code=200,
+            headers={"Content-Type": "text/plain"}
+        )
+
+    except Exception as e:
+        logging.exception("Error while calling Azure OpenAI Responses API")
+        return func.HttpResponse(
+            f"Error: {str(e)}",
+            status_code=500,
+            headers={"Content-Type": "text/plain"}
+        )
