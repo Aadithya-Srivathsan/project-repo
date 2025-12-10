@@ -1,0 +1,1506 @@
+Other
+Subscription Registration Action 
+Subscription Registration Action
+Other
+Unregister Domain Service 
+Unregister Domain Service
+Other
+Register Domain Service 
+Register Domain Service
+Read
+-- 
+--
+Read
+-- 
+--
+Read
+Read Domain Service 
+Read Domain Services
+Write
+Write Domain Service 
+Write Domain Service
+Delete
+Delete Domain Service 
+Delete Domain Service
+Read
+Get the network endpoints of all outbound dependencies 
+Get the network endpoints of all outbound dependencies
+Read
+Read diagnostic setting for Domain Service 
+Gets the diagnostic setting for Domain Service
+Write
+Write diagnostic setting for the Domain Service resource 
+Creates or updates the diagnostic setting for the Domain Service resource
+Read
+Gets the available logs for Domain Service 
+Gets the available logs for Domain Service
+Read
+Metrics for Domain Service 
+Gets metrics for Domain Service
+Read
+Read Ou Container 
+Read Ou Containers
+Write
+Write Ou Container 
+Write Ou Container
+Delete
+Delete Ou Container 
+Delete Ou Container
+microsoft.aadiam
+Read
+Azure AD Metrics Definition read 
+Read Azure AD Metrics Definition
+Write
+Azure AD Metrics Definition write 
+Create and Update Azure AD Metrics Definition
+Delete
+Azure AD Metrics Definition delete 
+Delete Azure AD Metrics Definition
+Read
+Read azureADMetrics metric definitions 
+Gets the available metrics for azureADMetrics
+Read
+Read diagnostic setting 
+Gets the diagnostic setting for the resource
+Write
+Write diagnostic setting 
+Creates or updates the diagnostic setting for the resource
+Write
+Diagnostic settings write 
+Writing a diagnostic setting
+Read
+Diagnostic settings read 
+Reading a diagnostic setting
+Delete
+Diagnostic settings delete 
+Deleting a diagnostic setting
+Read
+Diagnostic settings categories read 
+Reading a diagnostic setting categories
+Read
+Metric Definitions read 
+Reading Tenant-Level Metric Definitions
+Read
+Metrics read 
+Reading Tenant-Level Metrics
+Read
+Private Link Policy Definition read 
+Read Private Link Policy Definition
+Write
+Private Link Policy Definition read 
+Create and Update Private Link Policy Definition
+Delete
+Private Link Policy Definition read 
+Delete Private Link Policy Definition
+Other
+PrivateEndpointConnections approve 
+Approve PrivateEndpointConnections
+Read
+Private Link Proxies read 
+Read Private Link Proxies
+Delete
+Private Link Proxies read 
+Delete Private Link Proxies
+Other
+Private Link Proxies validate 
+Validate Private Link Proxies
+Read
+PrivateEndpointConnections read 
+Read PrivateEndpointConnections
+Write
+PrivateEndpointConnections read 
+Create and Update PrivateEndpointConnections
+Delete
+PrivateEndpointConnections read 
+Delete PrivateEndpointConnections
+Read
+PrivateLinkResources read 
+Read PrivateLinkResources
+Write
+PrivateLinkResources read 
+Create and Update PrivateLinkResources
+Delete
+PrivateLinkResources read 
+Delete PrivateLinkResources
+Read
+Read tenants log definitions 
+Gets the available logs for tenants
+Read
+Read diagnostic setting 
+Gets the diagnostic setting for the resource
+Write
+Write diagnostic setting 
+Creates or updates the diagnostic setting for the resource
+Microsoft.Addons
+Other
+Register for Microsoft.Addons 
+Register the specified subscription with Microsoft.Addons
+Other
+List support plan information. 
+Lists current support plan information for the specified subscription.
+Read
+Get Canonical support plan state 
+Get the specified Canonical support plan state.
+Write
+Adds a Canonical support plan. 
+Adds the Canonical support plan type specified.
+Delete
+Removes the Canonical support plan 
+Removes the specified Canonical support plan
+Read
+Get RP operations. 
+Gets supported RP operations.
+Microsoft.ADHybridHealthService
+Other
+Updates Tenant Configuration. 
+Updates Tenant Configuration.
+Other
+Updates a service. 
+Updates a service instance in the tenant.
+Other
+Create a new forest. 
+Create a new forest for the tenant.
+Other
+Registers the ADHybrid Health Service Resource Provider. 
+Registers the ADHybrid Health Service Resource Provider and enables the creation of ADHybrid Health Service resource.
+Other
+Unregisters the ADHybrid Health Service Resource Provider. 
+Unregisters the subscription for ADHybrid Health Service Resource Provider.
+Write
+Creates or Updates the ADDomainService. 
+Creates or Updates the ADDomainService instance for the tenant.
+Other
+Add a server. 
+Add a server instance to the service.
+Read
+Gets Service details. 
+Gets Service details for the specified service name.
+Delete
+Deletes a Service. 
+Deletes a Service and it's servers along with Health data.
+Read
+Gets all servers. 
+Gets all servers for the specified service name.
+Read
+Gets alerts for the forest. 
+Gets alerts details for the forest like alertid, alert raised date, alert last detected, alert description, last updated, alert level, alert state, alert troubleshooting links etc. .
+Read
+Gets Service Configuration for the forest. 
+Gets Service Configuration for the forest. Example- Forest Name, Functionla Level, Domain Naming master FSMO role, Schema master FSMO role etc.
+Read
+Gets the domains and sites details for the forest. 
+Gets the domains and sites details for the forest. Example- health status, active alerts, resolved alerts, properties like Domain Functional Level, Forest, Infrastructure Master, PDC, RID master etc.
+Read
+Gets the user preference setting. 
+Gets the user preference setting for the forest. Example- MetricCounterName like ldapsuccessfulbinds, ntlmauthentications, kerberosauthentications, addsinsightsagentprivatebytes, ldapsearches. Settings for the UI Charts etc.
+Read
+Gets forest summary. 
+Gets forest summary for the given forest like forest name, number of domains under this forest, number of sites and sites details etc.
+Read
+Gets the list of supported metrics for a given service. 
+Gets the list of supported metrics for a given service. For example Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFS service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomainService. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for ADSync service.
+Read
+Gets information about different service metrics. 
+Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.
+Read
+Gets onboarded ADDomainServices for a premium tenant. 
+This API gets the list of all onboarded ADDomainServices for a premium tenant.
+Read
+Gets replication details. 
+Gets replication details for all the servers for the specified service name.
+Read
+Gets replication error status. 
+Gets the number of domain controllers and their replication errors if any.
+Read
+Gets domain controller replication summary. 
+Gets complete domain controller list along with replication details for the given forest.
+Delete
+Deletes a server. 
+Deletes a server for a given service and tenant.
+Read
+Gets the credentials for service authentication. 
+During server registration of ADDomainService, this api is called to get the credentials for onboarding new servers.
+Read
+Gets agent logs. 
+Gets agent installation and registration logs for the tenant.
+Read
+Gets the content of a log stored in blob. 
+Gets the content of agent installation and registration logs stored in blob.
+Read
+Gets list of available regions for DevOps. 
+Gets list of available regions, used by DevOps to support customer incidents.
+Read
+Gets the list of bad password attempts. 
+Gets the list of bad password attempts for all the users in Active Directory Federation Service.
+Read
+Gets the list of DevOps consented tenants. 
+Gets the list of DevOps consented tenants. Typically used for customer support.
+Read
+Gets a value indicating wheather the teannt is DevOps Consented or not. 
+Gets a value indicating wheather the teannt is DevOps Consented or not.
+Read
+Updates userid(objectid) for the selected dev ops tenant. 
+Updates userid(objectid) for the selected dev ops tenant.
+Read
+Gets selected deployment. 
+Gets selected deployment for the given tenant.
+Read
+Gets tenant storage mapping. 
+Given a tenant id gets the tenant storage location.
+Read
+Gets the browsing location for the users. 
+Gets the geo location from which data will be accessed.
+Read
+Gets operations. 
+Gets list of operations supported by system.
+Write
+Creates a service. 
+Creates a service instance in the tenant.
+Read
+Reads services. 
+Reads the service instances in the tenant.
+Delete
+Deletes service. 
+Deletes a service instance in the tenant.
+Other
+Creates a server. 
+Creates or updates a server instance in the service.
+Read
+Reads the service alerts. 
+Reads the alerts for a service.
+Read
+Reads the service alerts. 
+Reads the alerts for a service.
+Read
+Gets alerts feedback. 
+Gets alerts feedback for a given service and server.
+Read
+Reads ipAddressAggregates. 
+Reads the bad IPs which attempted to access the service.
+Read
+Reads ipAddressAggregateSettings. 
+Reads alarm thresholds for bad IPs.
+Write
+Writes ipAddressAggregateSettings. 
+Writes alarm thresholds for bad IPs.
+Read
+Gets the list of supported metrics for a given service. 
+Gets the list of supported metrics for a given service. For example Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFS service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomainService. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for ADSync service.
+Read
+Gets information about different service metrics. 
+Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.
+Read
+Gets average view for metrics and performance data. 
+Given a service, this API gets the average for metrics for a given service.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.
+Read
+Gets aggregated view for metrics and performance data. 
+Given a service, this API gets the aggregated view for metrics for a given service.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.
+Write
+Add or updates monitoring configuration for a service. 
+Add or updates monitoring configuration for a service.
+Read
+Gets monitoring configurations for a service 
+Gets the monitoring configurations for a given service.
+Write
+Add or updates monitoring configurations for a service. 
+Add or updates monitoring configurations for a service.
+Read
+Gets onboarded services for premium tenants. 
+This API gets the list of all onboarded services for a premium tenant.
+Other
+Initiate generation of new risky IP report. 
+Generates Risky IP report and returns a URI pointing to it.
+Read
+Gets all Risky IP report URIs. 
+Gets all Risky IP report URIs for the last 7 days.
+Read
+Gets report for bad password. 
+Gets report of top 50 users with bad password errors from last 7 days
+Read
+Gets if a feature is enabled for a service. 
+Given a feature name verifies if a service has everything required to use that feature.
+Read
+Gets the export errors for a given sync service. 
+Gets the export errors for a given sync service.
+Read
+Gets the export status for a given service. 
+Gets the export status for a given service.
+Read
+Reads a server. 
+Reads the server instance in the service.
+Delete
+Deletes server. 
+Deletes a server instance in the service.
+Read
+Reads the server alerts. 
+Reads the alerts for a server.
+Read
+Gets the credentials for service authentication. 
+During server registration, this api is called to get the credentials for onboarding new servers.
+Read
+Gets the data freshness status. 
+For a given server, this API gets a list of datatypes that are being uploaded by the servers and the latest time for each upload.
+Read
+Gets the Sync Export Error details. 
+Gets the Sync Export Error details for a given Sync Service.
+Read
+Gets the list of connectors and run profile names. 
+Gets the list of connectors and run profile names for the given service and service member.
+Read
+Gets information about different service metrics. 
+Given a service, this API gets the metrics information.For example, this API can be used to get information related to: Extranet Account Lockouts, Total Failed Requests, Outstanding Token Requests (Proxy), Token Requests /sec etc for ADFederation service. NTLM Authentications/sec, LDAP Successful Binds/sec, LDAP Bind Time, LDAP Active Threads, Kerberos Authentications/sec, ATQ Threads Total etc for ADDomain Service. Run Profile Latency, TCP Connections Established, Insights Agent Private Bytes,Export Statistics to Azure AD for Sync Service.
+Read
+Gets service configuration. 
+Gets service configuration for a given tenant.
+Read
+Gets feature whitelisting status. 
+Gets feature whitelisting status for a given tenant.
+Read
+Gets Blob SAS Uri for enqueued report job. 
+Gets Blob SAS URI containing status and eventual result of newly enqueued report job for frequency of Bad Username/Password attempts per UserId per IPAddress per Day for a given Tenant.
+Write
+Creates a new Tenant. 
+Creates a Tenant Configuration.
+Read
+Reads Tenant Configuration. 
+Reads the Tenant Configuration.
+Microsoft.AlertsManagement
+Other
+Subscription Registration Action 
+Subscription Registration Action
+Other
+Register subscription 
+Registers the subscription for the Microsoft Alerts Management
+Other
+Migrate From Smart Detection 
+Starts an asynchronous migration process of Smart Detection to smart alerts in an Application Insights resource
+Read
+Read alerts meta data 
+Get alerts meta data for the input parameter.
+Read
+Read action rules 
+Get all the alert processing rules for the input filters.
+Write
+Write action rule 
+Create or update alert processing rule in a given subscription
+Delete
+Delete action rule 
+Delete alert processing rule in a given subscription.
+Read
+Read the alertRuleRecommendations 
+Read alertRuleRecommendations
+Read
+Read alerts 
+Get all the alerts for the input filters.
+Other
+Resolve alerts 
+Change the state of the alert.
+Read
+Read alert history 
+Get history of the alert
+Read
+Read alerts summary 
+Get the summary of alerts
+Write
+Creates or updates Investigation 
+Set Investigation
+Delete
+Delete the Investigation 
+Delete Investigation
+Read
+Read the Investigation 
+Read Investigation
+Read
+Read Issue 
+Read Issue
+Write
+Write Issue 
+Write Issue
+Delete
+Delete Issue 
+Delete Issue
+Other
+Start investigation 
+Start a new investigation based on the data in the Issue
+Other
+Get investigation result 
+Get result of an investigation by its ID
+Other
+Fetch investigation result 
+Fetch result of an investigation by its ID
+Other
+List alerts 
+List alerts added to the Issue
+Other
+Create or update alerts 
+Add alerts to the Issue or update alerts that were already added (one or more)
+Other
+List resources 
+List resources added to the Issue
+Other
+Create or update resources 
+Add resources to the Issue or update resources that were already added (one or more)
+Read
+Get Smart Detection Migration status 
+Get the status of an asynchronous Smart Detection to smart alerts migration process
+Read
+Read operations 
+Reads the operations provided
+Write
+Creates or updates the prometheusRuleGroups 
+Set prometheusRuleGroups
+Delete
+Deletes the prometheusRuleGroups 
+Delete prometheusRuleGroups
+Read
+Read the prometheusRuleGroups 
+Read prometheusRuleGroups
+Write
+Create Smart Detector alert rule 
+Create or update Smart Detector alert rule in a given subscription
+Read
+Read Smart Detector alert rules 
+Get all the Smart Detector alert rules for the input filters
+Delete
+Delete Smart Detector alert rule 
+Delete Smart Detector alert rule in a given subscription
+Read
+Read smart groups 
+Get all the smart groups for the input filters
+Other
+Read smart groups 
+Change the state of the smart group
+Read
+Read smart group history 
+Get history of the smart group
+Write
+Writes the tenantLevelActivityLogAlerts 
+Write tenantLevelActivityLogAlerts
+Delete
+Deletes the tenantLevelActivityLogAlerts 
+Delete tenantLevelActivityLogAlerts
+Read
+Reads the tenantLevelActivityLogAlerts 
+Read tenantLevelActivityLogAlerts
+Microsoft.AnalysisServices
+Other
+Register Analysis Services provider 
+Registers Analysis Services resource provider.
+Other
+Check availability of the Analysis Server name 
+Checks that given Analysis Server name is valid and not in use.
+Read
+Read operation results 
+Retrieves the information of the specified operation result.
+Read
+Read operation statuses 
+Retrieves the information of the specified operation status.
+Read
+Read operations 
+Retrieves the information of operations
+Read
+Read Analysis Server 
+Retrieves the information of the specified Analysis Server.
+Write
+Create/Update Analysis Server 
+Creates or updates the specified Analysis Server.
+Delete
+Delete the Analysis Server 
+Deletes the Analysis Server.
+Other
+Suspend the Analysis Server. 
+Suspends the Analysis Server.
+Other
+Resume the Analysis Server. 
+Resumes the Analysis Server.
+Other
+List the status of the gateway associated with the server 
+List the status of the gateway associated with the server.
+Read
+Read diagnostic setting 
+Gets the diagnostic setting for Analysis Server
+Write
+Write diagnostic setting 
+Creates or updates the diagnostic setting for Analysis Server
+Read
+Read Analysis Server log definitions 
+Gets the available logs for servers
+Read
+Read Microsoft Analysis Service metrics 
+Gets the available metrics for Analysis Server
+Read
+Read available SKU information for the server 
+Retrieve available SKU information for the server
+Read
+Read SKU information 
+Retrieves the information of Skus
+Microsoft.ApiManagement
+Other
+Register Microsoft.ApiManagement resource provider 
+Register subscription for Microsoft.ApiManagement resource provider
+Other
+Un-register Microsoft.ApiManagement resource provider 
+Un-register subscription for Microsoft.ApiManagement resource provider
+Read
+Read the status of a long running operation 
+View the status of a long running operation for which the 'AzureAsync' header was previously returned to the client
+Read
+Read all API operations available for API Management 
+Read all API operations available for Microsoft.ApiManagement resource
+Read
+Get reports 
+Get reports aggregated by time periods, geographical region, developers, products, APIs, operations, subscription and byRequest.
+Read
+Check Name Availability 
+Checks if provided service name is available
+Read
+Get deleted API Management Services 
+Get deleted API Management Services which can be restored within the soft-delete period
+Read
+Get deleted API Management Service by location 
+Get deleted API Management Service which can be restored within the soft-delete period by location
+Delete
+Purge API Management Service 
+Delete API Management Service without the option to restore it
+Read
+Get Gateway List list or Get Gateway details 
+Lists Gateway or Gets a Gateway
+Write
+Create a Gateway 
+Creates a Gateway
+Delete
+Deletes Gateway 
+Deletes a Gateway
+Read
+Get Gateway ConfigConnection List or Get Gateway ConfigConnection details 
+Lists Gateway ConfigConnections or Gets a Gateway ConfigConnection
+Write
+Create a Gateway Config Connection 
+Creates a Gateway Config Connection
+Delete
+Deletes Gateway Config Connection 
+Deletes a Gateway Config Connection
+Write
+Create or Update API Management Service instance 
+Create or Update API Management Service instance
+Read
+Read metadata for an API Management Service instance 
+Read metadata for an API Management Service instance
+Delete
+Delete API Management Service instance 
+Delete API Management Service instance
+Other
+Update domain names 
+Setup, update or remove custom domain names for an API Management Service
+Other
+Upload SSL certificate 
+Upload SSL certificate for an API Management Service
+Other
+Backup API Management Service 
+Backup API Management Service to the specified container in a user provided storage account
+Other
+Restore API Management Service 
+Restore API Management Service from the specified container in a user provided storage account
+Other
+Manage Service Deployments 
+Change SKU/units, add/remove regional deployments of API Management Service
+Other
+Get SSO token 
+Gets SSO token that can be used to login into API Management Service Legacy portal as an administrator
+Other
+Apply Network Configuration Updates 
+Updates the Microsoft.ApiManagement resources running in Virtual Network to pick updated Network Settings.
+Other
+Scheduled Maintenance 
+Perform Scheduled Maintenance on the service
+Other
+Register new user 
+Register a new user
+Other
+Send notification 
+Sends notification to a specified user
+Other
+Validates Restrictions 
+Validates Tenant Policy Restrictions
+Write
+Set Event Grid Filters 
+Set Event Grid Filters
+Delete
+Delete Event Grid Filters 
+Delete Event Grid Filters
+Read
+Get Event Grid Filter 
+Get Event Grid Filter
+Read
+Get Private Endpoint Connection Proxy 
+Get Private Endpoint Connection Proxy
+Write
+Create private endpoint connection proxy 
+Create the private endpoint connection proxy
+Delete
+Delete private endpoint connection proxy 
+Delete the private endpoint connection proxy
+Other
+Validate private endpoint connection proxy 
+Validate the private endpoint connection proxy
+Read
+Api Management private endpoint operation results (read) 
+View the result of private endpoint connection operations in the management portal
+Read
+Get Private Endpoint Connections by Name 
+Get Private Endpoint Connections
+Write
+Approve Or Reject Private Endpoint Connections by Name 
+Approve Or Reject Private Endpoint Connections
+Delete
+Delete Private Endpoint Connections by Name 
+Delete Private Endpoint Connections
+Read
+Get Private Link Group Resources 
+Get Private Link Group resources
+Read
+Get products associated with the API 
+Lists all Products, which the API is part of.
+Read
+Get diagnostics list or Get diagnostic details 
+Lists all diagnostics of an API. or Gets the details of the Diagnostic for an API specified by its identifier.
+Write
+Add diagnostic or Update diagnostic 
+Creates a new Diagnostic for an API or updates an existing one. or Updates the details of the Diagnostic for an API specified by its identifier.
+Delete
+Remove diagnostic 
+Deletes the specified Diagnostic from an API.
+Read
+Get API operations or Get API operation details 
+Lists a collection of the operations for the specified API. or Gets the details of the API Operation specified by its identifier.
+Write
+Create API operation or Update API operation 
+Creates a new operation in the API or updates an existing one. or Updates the details of the operation in the API specified by its identifier.
+Delete
+Remove API operation 
+Deletes the specified operation in the API.
+Read
+Get API Operation policies or Get API operation policy configuration 
+Get the list of policy configuration at the API Operation level. or Get the policy configuration at the API Operation level.
+Write
+Set API operation policy configuration 
+Creates or updates policy configuration for the API Operation level.
+Delete
+Remove API Operation policy configuration from policies 
+Deletes the policy configuration at the Api Operation.
+Read
+Get tags associated with the Operation or Tag details 
+Lists all Tags associated with the Operation. or Get tag associated with the Operation.
+Write
+Associate Tag with Operation 
+Assign tag to the Operation.
+Delete
+Delete Tag with Operation association 
+Detach the tag from the Operation.
+Read
+Get API policies or Get API policy configuration 
+Get the policy configuration at the API level. or Get the policy configuration at the API level.
+Write
+Set API policy configuration 
+Creates or updates policy configuration for the API.
+Delete
+Remove API policy configuration from policies 
+Deletes the policy configuration at the Api.
+Read
+Get revisions for an API or Get API release details 
+Lists all releases of an API. An API release is created when making an API Revision current. Releases are also used to rollback to previous revisions. Results will be paged and can be constrained by the $top and $skip parameters. or Returns the details of an API release.
+Delete
+Removes all releases of the API or Delete API release 
+Removes all releases of the API or Deletes the specified release in the API.
+Write
+Create API release or Update API release 
+Creates a new Release for the API. or Updates the details of the release of the API specified by its identifier.
+Read
+Get revisions for an API 
+Lists all revisions of an API.
+Delete
+Delete revisions of an API 
+Removes all revisions of an API
+Read
+Get tags associated with the API or Get Tag associated with API 
+Lists all Tags associated with the API. or Get tag associated with the API.
+Write
+Add Tag 
+Assign tag to the Api.
+Delete
+Remove Tag 
+Detach the tag from the Api.
+Read
+Get API list or Get API details 
+Lists all APIs of the API Management service instance. or Gets the details of the API specified by its identifier.
+Write
+Create API or Update API 
+Creates new or updates existing specified API of the API Management service instance. or Updates the specified API of the API Management service instance.
+Delete
+Remove API 
+Deletes the specified API of the API Management service instance.
+Read
+Get products associated with the API 
+Lists all Products, which the API is part of.
+Read
+Get diagnostics list or Get diagnostic details 
+Lists all diagnostics of an API. or Gets the details of the Diagnostic for an API specified by its identifier.
+Write
+Add diagnostic or Update diagnostic 
+Creates a new Diagnostic for an API or updates an existing one. or Updates the details of the Diagnostic for an API specified by its identifier.
+Delete
+Remove diagnostic 
+Deletes the specified Diagnostic from an API.
+Read
+Get API operations or Get API operation details 
+Lists a collection of the operations for the specified API. or Gets the details of the API Operation specified by its identifier.
+Write
+Create API operation or Update API operation 
+Creates a new operation in the API or updates an existing one. or Updates the details of the operation in the API specified by its identifier.
+Delete
+Remove API operation 
+Deletes the specified operation in the API.
+Read
+Get API Operation policies or Get API operation policy configuration 
+Get the list of policy configuration at the API Operation level. or Get the policy configuration at the API Operation level.
+Write
+Set API operation policy configuration 
+Creates or updates policy configuration for the API Operation level.
+Delete
+Remove API Operation policy configuration from policies 
+Deletes the policy configuration at the Api Operation.
+Read
+Get API Operation policy configuration 
+Get the policy configuration at Operation level
+Write
+Create API Operation policy 
+Create policy configuration at Operation level
+Delete
+Delete API Operation policy configuration 
+Delete the policy configuration at Operation level
+Read
+Get tags associated with the Operation or Tag details 
+Lists all Tags associated with the Operation. or Get tag associated with the Operation.
+Write
+Associate Tag with Operation 
+Assign tag to the Operation.
+Delete
+Delete Tag with Operation association 
+Detach the tag from the Operation.
+Read
+Get API policies or Get API policy configuration 
+Get the policy configuration at the API level. or Get the policy configuration at the API level.
+Write
+Set API policy configuration 
+Creates or updates policy configuration for the API.
+Delete
+Remove API policy configuration from policies 
+Deletes the policy configuration at the Api.
+Read
+Get API policy configuration 
+Get the policy configuration at API level
+Write
+Create API policy 
+Create policy configuration at API level
+Delete
+Delete API policy configuration 
+Delete the policy configuration at API level
+Read
+Get revisions for an API or Get API release details 
+Lists all releases of an API. An API release is created when making an API Revision current. Releases are also used to rollback to previous revisions. Results will be paged and can be constrained by the $top and $skip parameters. or Returns the details of an API release.
+Delete
+Removes all releases of the API or Delete API release 
+Removes all releases of the API or Deletes the specified release in the API.
+Write
+Create API release or Update API release 
+Creates a new Release for the API. or Updates the details of the release of the API specified by its identifier.
+Read
+Get revisions for an API 
+Lists all revisions of an API.
+Delete
+Delete revisions of an API 
+Removes all revisions of an API
+Read
+Get tags associated with the API or Get Tag associated with API 
+Lists all Tags associated with the API. or Get tag associated with the API.
+Write
+Add Tag 
+Assign tag to the Api.
+Delete
+Remove Tag 
+Detach the tag from the Api.
+Read
+Get GraphQL resolvers or Get GraphQL resolver 
+Get the graphQL resolvers at the API level. or Get the graphQL resolver at the API level.
+Write
+Set GraphQL resolver or Update GraphQL Resolver 
+Creates or updates graphQL resolver for the API. or Updates the details of the graphQL resolver in the API specified by its identifier.
+Delete
+Remove API policy configuration from policies 
+Deletes the policy configuration at the Api.
+Read
+Get list of policy configurations or Get GraphQL API policy configuration 
+Get the list of policy configurations at the GraphQL API resolver level. or Get the policy configuration at the GraphQL API resolver level.
+Write
+Set GraphQL API policy configuration 
+Creates or updates policy configuration for the GraphQL API.
+Delete
+Remove GraphQL API policy configuration from policies 
+Deletes the policy configuration at the GraphQL Api.
+Read
+Gets the schemas stored for a given API or Gets schemas for the API 
+Get the schema configuration at the API level. or Get the schema configuration at the API level.
+Write
+Sets schema used by the API 
+Creates or updates schema configuration for the API.
+Delete
+Removes schema for the API 
+Deletes the schema configuration at the Api.
+Read
+Get Operation-Tag associations list 
+Lists a collection of operations associated with tags.
+Read
+Tags descriptions in scope of API or Get Tag metadata 
+Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API
+Write
+Create/Change Tag metadata 
+Create/Update tag description in scope of the Api.
+Delete
+Remove Tag 
+Delete tag description for the Api.
+Read
+Get version set list or Get versionSet details 
+Lists a collection of API Version Sets in the specified service instance. or Gets the details of the Api Version Set specified by its identifier.
+Write
+Create VersionSet or Update VersionSet 
+Creates or Updates a Api Version Set. or Updates the details of the Api VersionSet specified by its identifier.
+Delete
+Remove VersionSet 
+Deletes specific Api Version Set.
+Read
+Get VersionSet version entity list 
+Get list of version entities
+Read
+Get TokenTrovider list or Get AuthorizationProvider details 
+Lists AuthorizationProvider within a service instance or Gets a AuthorizationProvider
+Write
+Create a AuthorizationProvider 
+Creates a AuthorizationProvider
+Delete
+Deletes AuthorizationProvider 
+Deletes a AuthorizationProvider
+Read
+Get Authorization list or Get Authorization details 
+Lists Authorization or Get Authorization
+Write
+Create Authorization 
+Creates a Authorization
+Delete
+Deletes a Authorization 
+Deletes a Authorization
+Other
+Post Authorization Login Links 
+Posts Authorization Login Links
+Other
+Post Authorization Confirm Consent Code 
+Posts Authorization Confirm Consent Code
+Read
+Get Authorization Permission list or Get Authorization Permission details 
+Lists Authorization Permissions or Get Authorization Permission
+Write
+Create Authorization Permission 
+Creates a Authorization Permission
+Delete
+Deletes a Authorization Permission 
+Deletes a Authorization Permission
+Read
+Get backends list or Get backend details 
+Lists a collection of backends in the specified service instance. or Gets the details of the backend specified by its identifier.
+Write
+Add backend or Update backend 
+Creates or Updates a backend. or Updates an existing backend.
+Delete
+Remove backend 
+Deletes the specified backend.
+Other
+Create Request 
+Notifies the APIM proxy to create a new connection to the backend after the specified timeout. If no timeout was specified, timeout of 2 minutes is used.
+Read
+Get by time report or Get by region report or Get by developer repoer or Get by product report or Get by API report or Get by operation report or Get by subscription report or Get requests data report 
+Get report aggregated by time periods or Get report aggregated by geographical region or Get report aggregated by developers. or Get report aggregated by products. or Get report aggregated by APIs or Get report aggregated by operations or Get report aggregated by subscription. or Get requests reporting data
+Read
+Get certificates list or Get cerificate details 
+Lists a collection of all certificates in the specified service instance. or Gets the details of the certificate specified by its identifier.
+Write
+Add certificate 
+Creates or updates the certificate being used for authentication with the backend.
+Delete
+Remove certificate 
+Deletes specific certificate.
+Other
+Refresh certificate from KeyVault 
+Refreshes certificate by fetching it from Key Vault.
+Read
+Get client applications list or Gets API Management application details 
+Gets all API Management client applications. or Gets API Management application details
+Write
+Create client application or Update client application 
+Registers an application to API Management or Updates application details
+Delete
+Delete client application 
+Removes existing application
+Other
+Get Client Application secrets 
+Gets Client Application secrets.
+Read
+Get all publisher notifications or Get publisher notification details 
+Lists a collection of properties defined within a service instance. or Gets the details of the Notification specified by its identifier.
+Write
+Create publisher notification 
+Create or Update API Management publisher notification.
+Read
+Get Email Recipients associated with Publisher Notification 
+Gets the list of the Notification Recipient Emails subscribed to a notification.
+Write
+Create new email recipient 
+Adds the Email address to the list of Recipients for the Notification.
+Delete
+Removes email associated with notification 
+Removes the email from the list of Notification.
+Read
+Get recipient users for the Notification 
+Gets the list of the Notification Recipient User subscribed to the notification.
+Write
+Add user to notification 
+Adds the API Management User to the list of Recipients for the Notification.
+Delete
+Removes user from notification recipients 
+Removes the API Management user from the list of Notification.
+Read
+Get email templates or Get email template details 
+Gets all email templates or Gets API Management email template details
+Write
+Create or update email template or Update email template 
+Create or update API Management email template or Updates API Management email template
+Delete
+Reset default email template 
+Reset default API Management email template
+Read
+Get all named values or Get named value details 
+Lists a collection of named values defined within a service instance. or Gets the details of the named value specified by its identifier.
+Write
+Create named value or Update named value 
+Creates or updates named value. or Updates the specific named value.
+Delete
+Remove named value 
+Deletes specific named value from the API Management service instance.
+Other
+Get the value 
+Gets the secret of the named value specified by its identifier.
+Other
+Refresh certificate from KeyVault 
+Refreshes named value by fetching it from Key Vault.
+Read
+Get policy descriptions 
+Lists all policy descriptions.
+Read
+Get policy snippets 
+Lists all policy snippets.
+Read
+Get all properties or Get property details 
+Lists a collection of properties defined within a service instance. or Gets the details of the property specified by its identifier.
+Write
+Create property or Update property value 
+Creates or updates a property. or Updates the specific property.
+Delete
+Remove property 
+Deletes specific property from the API Management service instance.
+Other
+Get property secrets 
+Gets the secrets of the property specified by its identifier.
+Read
+Get content types or Get all 
+Returns list of content types or Returns content type
+Delete
+Delete content item 
+Removes content type.
+Write
+Create content item 
+Creates new content type
+Read
+Get all or Get content item details 
+Returns list of content items or Returns content item details
+Write
+Create content item or Update content item 
+Creates new content item or Updates specified content item
+Delete
+Delete content item 
+Removes specified content item.
+Read
+Get diagnostics list or Get diagnostic details 
+Lists all diagnostics of the API Management service instance. or Gets the details of the Diagnostic specified by its identifier.
+Write
+Add diagnostic or Update diagnostic 
+Creates a new Diagnostic or updates an existing one. or Updates the details of the Diagnostic specified by its identifier.
+Delete
+Remove diagnostic 
+Deletes the specified Diagnostic.
+Read
+Lists a collection of all external Caches in the specified service instance. or Get cache details 
+Lists a collection of all external Caches in the specified service instance. or Gets the details of the Cache specified by its identifier.
+Write
+Create cache or Update cache 
+Creates or updates an External Cache to be used in Api Management instance. or Updates the details of the cache specified by its identifier.
+Delete
+Remove cache 
+Deletes specific Cache.
+Read
+Get gateways list or Get gateway details 
+Lists a collection of gateways registered with service instance. or Gets the details of the Gateway specified by its identifier.
+Write
+Create gateway or Update gateway 
+Creates or updates an Gateway to be used in Api Management instance. or Updates the details of the gateway specified by its identifier.
+Delete
+Remove gateway 
+Deletes specific Gateway.
+Other
+Get gateway keys 
+Retrieves gateway keys.
+Other
+Get gateway keys 
+Retrieves gateway keys.
+Other
+Regenerate key 
+Regenerates specified gateway key invalidationg any tokens created with it.
+Other
+Get token 
+Gets the Shared Access Authorization Token for the gateway.
+Other
+Get token 
+Gets the Shared Access Authorization Token for the gateway.
+Other
+Reset debug credentials 
+Forces gateway to reset all issued debug credentials
+Other
+List debug credentials 
+Issue a debug credentials for requests
+Other
+List collected trace 
+List collected trace created by gateway
+Read
+Get Gateway APIs list 
+Lists a collection of the APIs associated with a gateway.
+Write
+Add API to Gateway 
+Adds an API to the specified Gateway.
+Delete
+Remove API from Gateway 
+Deletes the specified API from the specified Gateway.
+Read
+Get Gateway Certificate Authority list or Get assigned Certificate Authority details 
+Get Gateway CAs list. or Get assigned Certificate Authority details.
+Write
+Assign Certificate to Gateway as Certificate Authority 
+Adds an API to the specified Gateway.
+Delete
+Unassign Certificate Authority from Gateway 
+Unassign Certificate Authority from Gateway.
+Read
+Get hostname configuration list or Get hostname configuration details 
+Lists the collection of hostname configurations for the specified gateway. or Get details of a hostname configuration
+Write
+Add hostname configuration 
+Create hostname configuration
+Delete
+Remove hostname configuration 
+Deletes the specified hostname configuration.
+Read
+Get GraphQL resolvers or Get GraphQL resolver 
+Get the graphQL resolvers at the API level. or Get the graphQL resolver at the API level.
+Write
+Set GraphQL resolver or Update GraphQL Resolver 
+Creates or updates graphQL resolver for the API. or Updates the details of the graphQL resolver in the API specified by its identifier.
+Delete
+Remove API policy configuration from policies 
+Deletes the policy configuration at the Api.
+Read
+Get list of policy configurations or Get GraphQL API policy configuration 
+Get the list of policy configurations at the GraphQL API resolver level. or Get the policy configuration at the GraphQL API resolver level.
+Write
+Set GraphQL API policy configuration 
+Creates or updates policy configuration for the GraphQL API.
+Delete
+Remove GraphQL API policy configuration from policies 
+Deletes the policy configuration at the GraphQL Api.
+Read
+Get groups list or Get group details 
+Lists a collection of groups defined within a service instance. or Gets the details of the group specified by its identifier.
+Write
+Create group or Update group 
+Creates or Updates a group. or Updates the details of the group specified by its identifier.
+Delete
+Remove group 
+Deletes specific group of the API Management service instance.
+Read
+Get group users list 
+Lists a collection of user entities associated with the group.
+Write
+Add user to group 
+Add existing user to existing group
+Delete
+Remove user from group 
+Remove existing user from existing group.
+Read
+Get Identity providers list or Get Identity Provider details 
+Lists a collection of Identity Provider configured in the specified service instance. or Gets the configuration details of the identity Provider without secrets.
+Write
+Create new Identity Provider or Update existing Identity Provider 
+Creates or Updates the IdentityProvider configuration. or Updates an existing IdentityProvider configuration.
+Delete
+Remove Identity Provider 
+Deletes the specified identity provider configuration.
+Other
+Get Identity Provider secrets 
+Gets Identity Provider secrets.
+Read
+Get keys list or Get key details 
+Get a list of keys or Get details of key
+Write
+Create a Key or Update Key 
+Create a Key to an existing Existing Entity or Update existing key details. This operation can be used to renew key.
+Delete
+Delete key 
+Delete key. This operation can be used to delete key.
+Other
+Regenerate PK 
+Regenerate primary key
+Other
+Regenerate SK 
+Regenerate secondary key
+Read
+Get loggers list or Get logger details 
+Lists a collection of loggers in the specified service instance. or Gets the details of the logger specified by its identifier.
+Write
+Add logger or Update logger 
+Creates or Updates a logger. or Updates an existing logger.
+Delete
+Remove logger 
+Deletes the specified logger.
+Read
+Gets the network status of the service 
+Gets the network access status of resources on which the service depends on.
+Read
+Gets the network status of the service in the location 
+Gets the network access status of resources on which the service depends on in the location.
+Read
+Get authorization service list or Get authorization server details without secrets 
+Lists a collection of authorization servers defined within a service instance. or Gets the details of the authorization server without secrets.
+Write
+Create new authorization server or Update existing authorization server 
+Creates new authorization server or updates an existing authorization server. or Updates the details of the authorization server specified by its identifier.
+Delete
+Remove authorization server 
+Deletes specific authorization server instance.
+Other
+Get authorization server secrets 
+Gets secrets for the authorization server.
+Read
+Get OpenID providers list or Get OpenID Connect Provider details without secrets 
+Lists of all the OpenId Connect Providers. or Gets specific OpenID Connect Provider without secrets.
+Write
+Create new OpenID Connect Provider or Update existing OpenID Connect Provider 
+Creates or updates the OpenID Connect Provider. or Updates the specific OpenID Connect Provider.
+Delete
+Remove OpenID Connect Provider 
+Deletes specific OpenID Connect Provider of the API Management service instance.
+Other
+Get OpenID Connect Provider secrets 
+Gets specific OpenID Connect Provider secrets.
+Read
+Get long running operation result 
+Gets current status of long running operation
+Read
+Gets the outbound network dependencies endpoints of the service 
+Gets the outbound network dependency status of resources on which the service depends on.
+Read
+Get policy fragments or Get policy fragment 
+Gets all policy fragments. or Gets a policy fragment.
+Write
+Set policy fragment 
+Creates or updates a policy fragment.
+Delete
+Delete policy fragment 
+Deletes a policy fragment.
+Other
+List policy fragment references 
+Lists policy resources that reference the policy fragment.
+Read
+Get portal settings or Get Sign In Settings or Get Sign Up Settings or Get Delegation Settings 
+Lists a collection of portal settings. or Get Sign In Settings for the Portal or Get Sign Up Settings for the Portal or Get Delegation Settings for the Portal.
+Write
+Update Settings or Update Settings or Update Settings or Update Settings or Update Settings or Update Settings 
+Update Sign-In settings. or Create or Update Sign-In settings. or Update Sign Up settings or Update Sign Up settings or Update Delegation settings. or Create or Update Delegation settings.
+Other
+Get property secrets or Get media content blob container uri 
+Gets validation key of portal delegation settings. or Get media content blob container uri.
+Read
+Get developer portal revision list or Get developer portal revision details 
+Lists a collection of developer portal revision entities. or Gets developer portal revision specified by its identifier.
+Write
+Create developer portal revision or Update developer portal revision 
+Creates a new developer portal revision. or Updates the description of specified portal revision or makes it current.
+Read
+Get subscriptions list or Get subscripiton details 
+Lists all subscriptions of the API Management service instance. or Gets the specified Subscription entity (without keys).
+Write
+Subscribe to product or Update subscription 
+Creates or updates the subscription of specified user to the specified product. or Updates the details of a subscription specified by its identifier.
+Delete
+Delete subscription 
+Deletes the specified subscription.
+Other
+Regenerate subscription PK 
+Regenerates primary key of existing subscription of the API Management service instance.
+Other
+Regenerate subscription SK 
+Regenerates secondary key of existing subscription of the API Management service instance.
+Other
+Get subscripiton keys 
+Gets the specified Subscription keys.
+Read
+Get product list or Get product details 
+Lists a collection of products in the specified service instance. or Gets the details of the product specified by its identifier.
+Write
+Create product or Update product 
+Creates or Updates a product. or Update existing product details.
+Delete
+Remove product 
+Delete product.
+Read
+Get product APIs list 
+Lists a collection of the APIs associated with a product.
+Write
+Add API to product 
+Adds an API to the specified product.
+Delete
+Remove API from product 
+Deletes the specified API from the specified product.
+Read
+Get product groups list 
+Lists the collection of developer groups associated with the specified product.
+Write
+Associate group with product 
+Adds the association between the specified developer group with the specified product.
+Delete
+Delete group with product association 
+Deletes the association between the specified group and product.
+Read
+Get Product policies or Get Product policy configuration 
+Get the policy configuration at the Product level. or Get the policy configuration at the Product level.
+Write
+Set Product policy configuration 
+Creates or updates policy configuration for the Product.
+Delete
+Remove Product policy configuration from policies 
+Deletes the policy configuration at the Product.
+Read
+Get Product policy configuration 
+Get the policy configuration at Product level
+Write
+Create Product policy 
+Create policy configuration at Product level
+Delete
+Delete Product policy configuration 
+Delete the policy configuration at Product level
+Read
+Get product subscriptions list 
+Lists the collection of subscriptions to the specified product.
+Read
+Get links or Get product-API details 
+Lists a collection of product-API links in the specified service instance. or Get product-API details.
+Write
+Create product-API link 
+Creates or Updates a product-API link.
+Delete
+Remove product-API link 
+Delete product-API link.
+Read
+Get links or Get product-group details 
+Lists a collection of product-group links in the specified service instance. or Get product-group details.
+Write
+Create product-group link 
+Creates or Updates a product-group link.
+Delete
+Remove product-group link 
+Delete product-group link.
+Read
+Get product tags or Tag details 
+Lists all Tags associated with the Product. or Get tag associated with the Product.
+Write
+Associate Tag with Product 
+Assign tag to the Product.
+Delete
+Delete Tag with Product association 
+Detach the tag from the Product.
+Read
+Get quota values 
+Get values for quota
+Write
+Set quota counter 
+Set quota counter current value
+Read
+Get quota values 
+Get quota counter value for period
+Write
+Set quota counter 
+Set quota counter current value
+Read
+Get tenant access settings or Get tenant policy configuration or Get tenant access information 
+Lists a collection of tenant access settings. or Get the Global policy definition of the Api Management service. or Get tenant access information details
+Write
+Set tenant policy configuration or Update tenant access information or Update tenant access information 
+Set policy configuration for the tenant or Update tenant access information details or Update tenant access information details
+Delete
+Remove tenant policy configuration 
+Remove policy configuration for the tenant
+Other
+Get tenant access information 
+Get tenant access information details
+Other
+Regenerate primary key 
+Regenerate primary access key
+Other
+Regenerate secondary key 
+Regenerate secondary access key
+Other
+Runs a deployment task to apply changes from the specified git branch 
+Runs a deployment task to apply changes from the specified git branch to the configuration in database.
+Other
+Creates commit with configuration snapshot 
+Creates commit with configuration snapshot to the specified branch in the repository
+Other
+Validates changes from the specified branch 
+Validates changes from the specified git branch
+Read
+Get status of last synchronization 
+Get status of last git synchronization
+Read
+Get operation results or Get operation result 
+Get list of operation results or Get result of a specific operation
+Read
+Get portal settings 
+Lists a collection of tenant settings. Always empty. Use /settings/public instead
+Read
+Get schemas list or Get schema details 
+Lists a collection of schemas registered. or Gets the details of the Schema specified by its identifier.
+Write
+Create schema 
+Creates or updates an Schema to be used in Api Management instance.
+Delete
+Remove schema 
+Deletes specific Schema.
+Read
+Gets the schemas stored for a given API or Gets schemas for the API 
+Get the schema configuration at the API level. or Get the schema configuration at the API level.
+Write
+Sets schema used by the API 
+Creates or updates schema configuration for the API.
+Delete
+Removes schema for the API 
+Deletes the schema configuration at the Api.
+Read
+Read diagnostic setting 
+Gets the diagnostic setting for ApiManagement service
+Write
+Write diagnostic setting 
+Creates or updates the diagnostic setting for ApiManagement service
+Read
+List of all azure regions in which the service exists. 
+Lists all azure regions in which the service exists.
+Read
+Get Tags Resources 
+Lists a collection of resources associated with tags.
+Read
+Get Tags list or Tag details 
+Lists a collection of tags defined within a service instance. or Gets the details of the tag specified by its identifier.
+Write
+Add Tag or Update Tag 
+Creates a tag. or Updates the details of the tag specified by its identifier.
+Delete
+Remove Tag 
+Deletes specific tag of the API Management service instance.
+Read
+Get links or Get Tag-API details 
+Lists a collection of Tag-API links in the specified service instance. or Get Tag-API details.
+Write
+Create Tag-API link 
+Creates or Updates a Tag-API link.
+Delete
+Remove Tag-API link 
+Delete Tag-API link.
+Read
+Get links or Get Tag-operation details 
+Lists a collection of Tag-operation links in the specified service instance. or Get Tag-operation details.
+Write
+Create Tag-operation link 
+Creates or Updates a Tag-operation link.
+Delete
+Remove Tag-operation link 
+Delete Tag-operation link.
+Read
+Get links or Get Tag-product details 
+Lists a collection of Tag-product links in the specified service instance. or Get Tag-product details.
+Write
+Create Tag-product link 
+Creates or Updates a Tag-product link.
+Delete
+Remove Tag-product link 
+Delete Tag-product link.
+Read
+Get Api-Tag associations list 
+Lists a collection of apis associated with tags.
+Read
+Get Operation-Tag associations list 
+Lists a collection of operations associated with tags.
+Read
+Get Product-Tag associations list 
+Lists a collection of products associated with tags.
+Read
+Tags descriptions in scope of API or Get Tag metadata 
+Lists all Tags descriptions in scope of API. Model similar to swagger - tagDescription is defined on API level but tag may be assigned to the Operations or Get Tag description in scope of API
+Write
+Create/Change Tag metadata 
+Create/Update tag description in scope of the Api.
+Delete
+Remove Tag 
+Delete tag description for the Api.
+Read
+Get Tenant policies or Get Tenant policy configuration 
+Lists all the Global Policy definitions of the Api Management service. or Get the Global policy definition of the Api Management service.
+Write
+Set Tenant policy configuration 
+Creates or updates the global policy configuration of the Api Management service.
+Delete
+Remove Tenant policy configuration from policies 
+Deletes the global policy configuration of the Api Management Service.
+Read
+Get Tenant policy configuration 
+Get the policy configuration at Tenant level
+Write
+Create Tenant policy 
+Create policy configuration at Tenant level
+Delete
+Delete Tenant policy configuration 
+Delete the policy configuration at Tenant level
+Read
+Get Policy Restrictions or Get Tenant policy restriction 
+Lists all the Global Policy Restrictions of the Api Management service. or Get the Global policy restriction of the Api Management service.
+Write
+Set Tenant policy restriction or Update Tenant policy restriction 
+Creates or updates the global policy restriction of the Api Management service. or Updates the global policy restriction of the Api Management service.
+Delete
+Remove Tenant policy restriction from policies 
+Deletes the global policy restriction of the Api Management Service.
+Read
+Read API Management service log definitions 
+Gets the available logs for API Management service
