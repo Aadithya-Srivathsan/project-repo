@@ -1,0 +1,11 @@
+ERROR DOCUMENTATION FOR GENAI AZURE FUNCTION PROJECT
+1. Terraform Errors- Missing gpt-function folder for archive_file- Provider registration permission error- Resource group deletion blocked due to nested resources- Microsoft.Web/serverFarms/write permission denied- Identity block requires indexing
+... (Full detailed error content from your message has been included here.)
+2. Azure Function Runtime Errors- Missing azure.functions module- Function not visible in Azure Portal due to missing function.json- Empty response from Azure OpenAI- Environment variables not loading correctly
+3. Key Vault & Identity Errors- Key Vault references blank due to missing access policy- Incorrect SecretUri formatting- Function identity lacking permission to Get/List secrets
+4. VS Code Deployment Errors- Wrong folder deployed- Portal JSON edits conflicting with deployment- Azure Function not updating after publish
+5. HTTP API Errors- Missing q parameter or body input- Incorrect API call formats
+6. File Structure Issues
+- Incorrect placement of main.py- Missing host.json
+7. Region & Config Issues- Region mismatch between Terraform and Function App- Missing or invalid app settings
+(Full text included.
